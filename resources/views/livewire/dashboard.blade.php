@@ -1,3 +1,3 @@
 <div>
-    {{-- The best athlete wants his opponent at his best. --}}
+    <button type="button" wire:click='logout' class="bg-red-600">Logout</button>
 </div>

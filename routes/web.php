@@ -17,5 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/register',Register::class);
-Route::get('/', Login::class);
-Route::get('/dashboard', Dashboard::class);
+Route::get('/', Login::class)->name('login');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', Dashboard::class);
+});
