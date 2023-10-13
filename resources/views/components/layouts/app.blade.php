@@ -6,7 +6,7 @@
         <title>{{ $title ?? 'Relationship' }}</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="w-full h-auto {{ session('dark_mode', true) ? 'dark' : 'light' }}">
+    <body class="w-full h-screen {{ session('dark_mode', true) ? 'dark' : 'light' }}">
         {{ $slot }}
         @livewireScripts
         <script>
